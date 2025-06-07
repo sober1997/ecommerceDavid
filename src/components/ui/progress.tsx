@@ -5,6 +5,13 @@ import * as ProgressPrimitive from "@radix-ui/react-progress";
 
 import { cn } from "@/lib/utils";
 
+/**
+ * Displays a horizontal progress bar with customizable styling and value.
+ *
+ * Renders a styled progress indicator that visually represents the completion percentage specified by the {@link value} prop. Additional props and class names are forwarded to the root element.
+ *
+ * @param value - The current progress value as a percentage (0–100). If not provided, defaults to 0.
+ */
 function Progress({
   className,
   value,
