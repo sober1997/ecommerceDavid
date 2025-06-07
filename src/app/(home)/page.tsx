@@ -4,6 +4,11 @@ import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { Textarea } from "@/components/ui/textarea";
 
+/**
+ * Renders a vertically stacked set of UI components, including a button, input, progress bar, textarea, and checkbox.
+ *
+ * @returns A JSX element containing the arranged UI components.
+ */
 export default function Home() {
   return (
     <div>
