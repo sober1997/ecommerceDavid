@@ -14,13 +14,13 @@ const poppins = Poppins({
   weight: ["700"],
 });
 
-interface NavebarItemProps {
+interface NavbarItemProps {
   href: string;
   children: React.ReactNode;
   isActive?: boolean;
 }
 
-const NavbarItem = ({ href, children, isActive }: NavebarItemProps) => {
+const NavbarItem = ({ href, children, isActive }: NavbarItemProps) => {
   return (
     <Button
       asChild
@@ -35,17 +35,17 @@ const NavbarItem = ({ href, children, isActive }: NavebarItemProps) => {
   );
 };
 
-const navbarItems: NavebarItemProps[] = [
+const navbarItems: NavbarItemProps[] = [
   { href: "/", children: "Home", isActive: true },
   { href: "/about", children: "About" },
   { href: "/contact", children: "Contact" },
   { href: "/products", children: "Products" },
   { href: "/cart", children: "Cart" },
 ];
-export const Narbar = () => {
+export const Navbar = () => {
   // You can add logic here to determine the active state based on the current route
   const pathname = usePathname();
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
     <nav className="h-20 flex border-b justify-between font-medium bg-white">
       <Link href="/" className="pl-6 flex items-center">
@@ -99,4 +99,4 @@ export const Narbar = () => {
   );
 };
 
-export default Narbar;
+export default Navbar;
