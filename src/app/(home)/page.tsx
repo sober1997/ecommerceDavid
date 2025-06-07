@@ -11,18 +11,18 @@ export default function Home() {
         <div>
           <Button variant={"elevated"}>I am a button</Button>
         </div>
-      </div>
-      <div>
-        <Input placeholder="I am an input"></Input>
-      </div>
-      <div>
-        <Progress value={50}></Progress>
-      </div>
-      <div>
-        <Textarea placeholder="I am a textarea"></Textarea>
-      </div>
-      <div>
-        <Checkbox></Checkbox>
+        <div>
+          <Input placeholder="I am an input"></Input>
+        </div>
+        <div>
+          <Progress value={50}></Progress>
+        </div>
+        <div>
+          <Textarea placeholder="I am a textarea"></Textarea>
+        </div>
+        <div>
+          <Checkbox></Checkbox>
+        </div>
       </div>
     </div>
   );
